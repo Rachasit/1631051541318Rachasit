@@ -1,5 +1,5 @@
 <?php
-    $Multi = @$_POST['multi'];
+    $Multiply = @$_POST['multiply'];
 ?>
 <!DOCTYPE html>
 <html>
@@ -9,14 +9,14 @@
     <body>
     <h2>การคำนวณสูตรคูณ</h2>
     <form action="Multiplication2.php" method="POST">
-    Multi : <input type="text" name="multi"><br><br>
+    Multiply : <input type="text" name="multiply"><br><br>
     <input type="submit" value="คำนวณ"><br><br>
     </form>
     <?php
         $i=1;
         while ($i<=12)
         {
-            echo "$i x $Multi=".$i*$Multi."<br>";
+            echo "$i x $Multiply=".$i*$Multiply."<br>";
             $i++;
         }
     ?>
